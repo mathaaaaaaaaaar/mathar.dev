@@ -116,3 +116,32 @@
 .newsletter-form-submit-button {
   border-radius: 45px !important;
 }
+
+.contact-info-container {
+  border: #102a43 2px solid;
+  border-radius: 20px;
+  max-width: 500px !important;
+}
+
+.contact-info-title {
+  text-align: left;
+}
+
+.contact-page-container {
+  border: #102a43 2px solid;
+  border-radius: 20px;
+  max-width: 40% !important;
+}
+
+.contact-name-label {
+  text-align: left;
+}
+
+.contact-form-name-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-name {
+  width: 95% !important;
+}
