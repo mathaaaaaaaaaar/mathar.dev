@@ -9,9 +9,9 @@ import {
   Routes,
 } from 'react-router-dom';
 
+import Footer from './components/Footer';
 import HeaderBar from './components/HeaderBar';
 import HeroSection from './components/HeroSection';
-import Blogs from './pages/blog';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
 
@@ -23,11 +23,12 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<HeroSection />} />
-          <Route path='/blog' element={<Blogs />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
+
+      <Footer />
     </div>
   );
 }

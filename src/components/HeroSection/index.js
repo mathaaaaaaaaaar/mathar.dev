@@ -19,6 +19,7 @@ function HeroSection() {
                     <p>&lt;Front-End Developer&gt; &lt;Freelancer&gt; &lt;Blogger&gt;</p>
                     <p className='heroDescription'>I'm a Software Engineer, who has helped people overcome their reading difficulties, with Speechify; and created value for e-commerce stores, with Swym. You can find more about me here:</p>
                     <SocialButtonsBar />
+                    <br />
                 </Col>
             </Row>
         </Container>

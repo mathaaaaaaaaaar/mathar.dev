@@ -96,3 +96,23 @@
 .headerBar {
   background-color: #102a43;
 }
+
+.footer-container {
+  background-color: #102a43;
+}
+
+.newsletter-form-email {
+  border: none !important;
+}
+
+.newsletter-form-submit {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 45px;
+}
+
+.newsletter-form-submit-button {
+  border-radius: 45px !important;
+}
