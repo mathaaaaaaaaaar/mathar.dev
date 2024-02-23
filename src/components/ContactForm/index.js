@@ -33,7 +33,7 @@ function ContactForm() {
                 <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" rows={3} />
             </Form.Group>
-            <Button type='submit' className='mb-3'>Submit</Button>
+            <Button type='submit' className='mb-3 contact-form-submit-button'>Submit</Button>
         </Form>
     )
 }
