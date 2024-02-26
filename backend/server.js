@@ -2,34 +2,18 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { PORT, MONGO_URL } = require('./config/mongo.js');
 const path = require('path');
-const Subscriber = require('./models/subscriberModel.js');
+const { Subscriber } = require('./models/subscriberModel.js');
+const subscribeRoute = require('./routes/newsletterRoute.js');
 
 const app = new express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/health-check', (req, res) => {
     res.status(200).send("Server works");
 });
 
-app.post('/', async (req, res) => {
-    try {
-        if (!req.body.email) {
-            return res.status(400).send("Email is required");
-        }
-
-        const newSubscriber = new Subscriber({
-            email: req.body.email,
-        });
-
-        const subscriber = await Subscriber.create(newSubscriber);
-
-        return res.status(201).send(subscriber);
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Error subscribing");
-    }
-});
+app.use('/subscribe-newsletter', subscribeRoute);
 
 mongoose.connect(MONGO_URL)
     .then(() => {
