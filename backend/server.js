@@ -4,10 +4,13 @@ const { PORT, MONGO_URL } = require('./config/mongo.js');
 const path = require('path');
 const { Subscriber } = require('./models/subscriberModel.js');
 const subscribeRoute = require('./routes/newsletterRoute.js');
+const cors = require('cors');
 
 const app = new express();
 
 app.use(express.json());
+
+app.use(cors());
 
 app.get('/health-check', (req, res) => {
     res.status(200).send("Server works");
