@@ -24,7 +24,11 @@ function HeaderBar() {
           mathar.dev
         </Navbar.Brand>
         <Nav className="ms-auto headerItems">
-          {headerItems.map(([headerItem, headerLink, isComingSoon]) => <Nav.Link href={headerLink}>|&nbsp;{headerItem} {isComingSoon ? <Badge pill bg="info">Coming Soon!</Badge> : null}</Nav.Link>)}
+          {headerItems.map(([headerItem, headerLink, isComingSoon], index) => (
+            <Nav.Link key={index} href={headerLink}>
+              |&nbsp;{headerItem} {isComingSoon ? <Badge pill bg="info">Coming Soon!</Badge> : null}
+            </Nav.Link>
+          ))}
         </Nav>
       </Container>
     </Navbar>
