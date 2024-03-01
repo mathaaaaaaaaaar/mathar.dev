@@ -11,7 +11,7 @@ import linkedinIcon from '../../icons/linkedin.svg';
 import phoneIcon from '../../icons/phone.svg';
 import twitterIcon from '../../icons/twitter.svg';
 
-function ContactInfo() {
+const ContactInfo = () => {
     return (
         <Container className='contact-info-container py-1 px-4 mx-auto my-3'>
             <h4 className='contact-info-title'>Contact Info:</h4>

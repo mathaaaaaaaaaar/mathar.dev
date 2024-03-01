@@ -4,6 +4,7 @@ const { PORT, MONGO_URL } = require('./config/mongo.js');
 const path = require('path');
 const { Subscriber } = require('./models/subscriberModel.js');
 const subscribeRoute = require('./routes/newsletterRoute.js');
+const contactRoute = require('./routes/contactRoute.js');
 const cors = require('cors');
 
 const app = new express();
@@ -17,6 +18,8 @@ app.get('/health-check', (req, res) => {
 });
 
 app.use('/subscribe-newsletter', subscribeRoute);
+
+app.use('/contact-form-submit', contactRoute);
 
 mongoose.connect(MONGO_URL)
     .then(() => {
