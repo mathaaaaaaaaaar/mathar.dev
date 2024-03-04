@@ -1,17 +1,23 @@
 import React from 'react';
 
+import { Card } from 'react-bootstrap';
+
 const TimelineInfo = ({ event }) => {
     return (
-        <div className="timeline-card">
-            <h3>{event.role}</h3>
-            <h4>{event.company}</h4>
-            <p>{event.duration}</p>
-            <ul>
-                {event.points.map((point, index) => (
-                    <li key={index}>{point}</li>
-                ))}
-            </ul>
-        </div>
+        <Card className='text-center timeline-card'>
+            <Card.Header>{event.company}</Card.Header>
+            <Card.Body>
+                <Card.Title>{event.role}</Card.Title>
+                <Card.Text>
+                    <ul>
+                        {event.points.map((point, index) => (
+                            <li key={index}>{point}</li>
+                        ))}
+                    </ul>
+                </Card.Text>
+            </Card.Body>
+            <Card.Footer>{event.duration}</Card.Footer>
+        </Card>
     );
 };
 

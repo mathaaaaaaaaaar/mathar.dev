@@ -151,3 +151,34 @@
   background-color: #102a43 !important;
   border: none !important;
 }
+
+.timeline-card {
+  background-color: #102a43 !important;
+}
+
+.work-timeline-dot {
+  background-color: red !important;
+}
+
+.school-timeline-dot {
+  background-color: greenyellow !important;
+}
+
+.timeline-dot {
+  cursor: pointer;
+}
+
+.timeline-dot-active {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
