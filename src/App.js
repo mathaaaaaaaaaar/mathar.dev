@@ -11,8 +11,8 @@ import {
 
 import Footer from './components/Footer';
 import HeaderBar from './components/HeaderBar';
-import HeroSection from './components/HeroSection';
 import Contact from './pages/contact';
+import Home from './pages/home';
 import Projects from './pages/projects';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 
       <Router>
         <Routes>
-          <Route exact path='/' element={<HeroSection />} />
+          <Route exact path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

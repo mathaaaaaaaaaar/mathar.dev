@@ -1,10 +1,2 @@
 .timeline {
-    position: relative;
-}
-
-.timeline-vertical {
-    transform: rotate(90deg);
-    top: 0;
-    position: absolute;
-    width: 100%;
 }
