@@ -16,8 +16,8 @@ function HeroSection() {
                 <Col>
                     <img className='heroPicture' src={myImage} height='400px' width='400px' />
                     <h1 className='titleText'>Hi, I'm Mathar.</h1>
-                    <p>&lt;Front-End Developer&gt; &lt;Success Manager&gt; &lt;Blogger&gt;</p>
-                    <p className='heroDescription'>I'm a Software Engineer, who has helped people overcome their reading difficulties, with Speechify; and created value for e-commerce stores, with Swym. You can find more about me here:</p>
+                    <p>&lt;Front-End Developer&gt; &lt;iOS Developer&gt; &lt;Blogger&gt;</p>
+                    <p className='heroDescription'>I'm a Software Engineer, who has helped people overcome their reading difficulties, with Speechify; created value for e-commerce stores, with Swym; and guided tech companies to assess their candidates using WeCP's AI tool. You can find more about me here:</p>
                     <SocialButtonsBar />
                     <br />
                 </Col>

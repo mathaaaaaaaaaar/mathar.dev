@@ -11,7 +11,7 @@ import instagramIcon from '../../icons/instagram.svg';
 import linkedinIcon from '../../icons/linkedin.svg';
 import twitterIcon from '../../icons/twitter.svg';
 
-function SocialButtonsBar() {
+const SocialButtonsBar = () => {
 	return <div>
 		<Container fluid>
 			<Row className='socialMediaBar justify-content-center'>
