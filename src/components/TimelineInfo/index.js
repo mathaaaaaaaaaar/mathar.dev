@@ -7,7 +7,7 @@ const TimelineInfo = ({ event }) => {
         <Card className='text-center timeline-card'>
             <Card.Header>{event.company}</Card.Header>
             <Card.Body>
-                <Card.Title>{event.role}</Card.Title>
+                <Card.Title className='role-name'>{event.role}</Card.Title>
                 <Card.Text>
                     <ul>
                         {event.points.map((point, index) => (
