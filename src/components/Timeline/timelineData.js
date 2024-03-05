@@ -4,7 +4,8 @@ const timelineData = [
         company: 'Conestoga College',
         duration: 'September 2023 - December 2024',
         points: [
-            ''
+            'Worked on 30+ projects varying from iOS, Android, and Cross-Platform Development',
+            'Lead a team in creating impressive User Interfaces for 3 projects',
         ],
         workOrEd: 'ed',
     },
@@ -24,7 +25,7 @@ const timelineData = [
         company: 'Speechify',
         duration: 'August 2022 - November 2022',
         points: [
-            'Worked on  a Text-To-Speech Web App, Chrome, and Safari extension, helping 1,000,000+ users read with ease',
+            'Worked on a Text-To-Speech Web App, Chrome, and Safari extension, helping 1,000,000+ users read with ease',
             'Reduced uninstalls from 15% to 6%, by identifying and fixing broken experiences for customers',
             'Consistently listened to User feedback and built new features, further improving user retention'
         ],
@@ -47,7 +48,9 @@ const timelineData = [
         company: 'College of Engineering, Guindy - Anna University',
         duration: 'September 2017 - June 2021',
         points: [
-            ''
+            'Improved Google\'s BERT Deep Learning model, using bigrams and trigrams, increasing accuracy by 33.6%',
+            'Tutored 20+ freshmen students in Data Structures, Algorithms, and fundamental Programming',
+            'Actively participated in Entrepreneurship, Literature, Theatre, and Tech Forums, winning 10+ awards and accolades',
         ],
         wkOrEd: 'ed',
     },
