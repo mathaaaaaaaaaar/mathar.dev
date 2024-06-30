@@ -4,7 +4,7 @@ const { PORT, MONGO_URL } = require('./config/mongo.js');
 const path = require('path');
 const { Subscriber } = require('./models/subscriberModel.js');
 const subscribeRoute = require('./routes/newsletterRoute.js');
-const contactRoute = require('./routes/contactRoute.js');
+const contactRoute = require('../api/contact.js');
 const cors = require('cors');
 
 const app = new express();
