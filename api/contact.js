@@ -1,5 +1,6 @@
 const express = require('express');
 const { ContactPerson } = require('../backend/models/contactPersonModel.js');
+const { default: mongoose } = require('mongoose');
 
 const router = express.Router();
 
