@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/**": {
+        "backend/routes/**": {
         "runtime": "@vercel/node@1.3.1"
       }
     },
