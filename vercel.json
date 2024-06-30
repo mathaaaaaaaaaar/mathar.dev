@@ -1,0 +1,10 @@
+{
+    "functions": {
+      "api/**": {
+        "runtime": "nodejs20.x"
+      }
+    },
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "/backend/routes/$1.js" }
+    ]
+  }
