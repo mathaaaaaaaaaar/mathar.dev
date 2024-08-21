@@ -225,3 +225,81 @@
 .timeline-main {
   margin: 0 200px;
 }
+
+/* Card styling */
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.project-card {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.6s, width 0.6s, height 0.6s;
+  background-color: #102a43 !important;
+  color: #BCCCDC !important;
+  border-radius: 20px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Modal styling */
+.modal-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content styling */
+.modal-content {
+  width: 80% !important;
+  height: 80%;
+  background-color: #334E68 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform 0.6s;
+  border-radius: 30px !important;
+}
+
+/* Card flipped state */
+.card.flipped {
+  transform: scale(0);
+  width: 80%;
+  height: 80%;
+}
+
+/* Modal show state */
+.modal-parent.show {
+  display: flex;
+}
+
+/* Modal content show state */
+.modal-parent.show .modal-content {
+  transform: scale(1);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}

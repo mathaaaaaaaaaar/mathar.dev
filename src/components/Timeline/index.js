@@ -68,6 +68,8 @@ const TimelineComponent = () => {
     return (
 
         <div className='timeline-parent'>
+            <br /><br />
+            <h3 className='titleText'>Education and Experience</h3>
             <Divider />
             <Timeline className="timeline-main" position="alternate">
                 {timelineData.map((event, index) => (
@@ -86,6 +88,7 @@ const TimelineComponent = () => {
                     </TimelineItem>
                 ))}
             </Timeline>
+            <br /><br />
         </div>
     );
 };
